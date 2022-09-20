@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" >
+    <test verbose="2" preserve-order="true" name="/Users/deniz.aladag/IdeaProjects/apiAutomationProject">
+        <classes>
+            <class name="usertests.deleteUserTest">
+                <methods>
+                    <include name="shouldDeletedValidUser"/>
+                </methods>
+            </class>
+            <class name="usertests.getUserTest">
+                <methods>
+                    <include name="shouldUserFoundWithValidUserName"/>
+                    <include name="shouldUserNotFoundWithInvalidUserName"/>
+                </methods>
+            </class>
+            <class name="usertests.postUserTest">
+                <methods>
+                    <include name="shouldCreateNewUserWithValidParameters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
